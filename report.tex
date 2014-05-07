@@ -96,7 +96,7 @@ Cosine Similarity\cite{dke} is a metric used to find the similarity between the 
 \begin{figure}[h!]
   \centering
     \includegraphics[natwidth=0.4\textwidth]{graph.JPG}
-      \caption{Cosine angular similarity graph}
+      \caption{Cosine angular similarity}
       \label{fig:relation}
 \end{figure}
 
@@ -378,9 +378,17 @@ Here \emph{svd} is the object which holds the computed vector matrix of similari
 
 This JSON file is used to render HTML web page linked to  {http://whispering-sands-8504.herokuapp.com}
 
+%EXPERIMENTAL RESULTS
 \section{Experimental Results}
+Our project used dataset from the GroupLens which is a research lab in the Department of Computer Science and Engineering at University of Minnesota. They specialize in recommender systems, online communities, mobile and ubiquitous technologies. The data set was collected through the MovieLens web site which is part of University of Minnesota. The data is cleaned up -- users who had less than 20 ratings or did not have complete demographic information were removed from the data set.
 
+They have provided three sets of data set, file with 100K rating entries, file with 1M data entries and file with 10M rating entries. To generate significant result, we used 10M data entries with a total of 9372 movies. Though we only used ratings by users for the similarity, the results were comparative as compared to online movie recommendation engines. For example, top hit for movie \emph{Toy Story (1995)} was \emph{Toy Story 2 (1999)} for which IMDB, Rottentomato, Tastekid and jinni showed the same results.
+
+%CONCLUSION
 \section{Conclusion}
+We found that finding similarity of movies by using only one attribute would suffice and might give you significant results but it has it's own limitations. Since documents are usually not of equal length, simply computing the difference between two vectors has the disadvantage that documents of similar content but different length are not regarded as similar in the vector space which is why for some movies it showed dissimilar result. We found that for some movies the result was not reversed when they were tested for the movies. For example if Movie A is most similar to Movie B, but in some cases Movie B did not showed most similarity to Movie A. \emph{Toy Story (1995)} was most similar to \emph{Toy Story 2 (1999)} but \emph{Toy Story 2 (1999)} was not most similar to \emph{Toy Story (1995)} but \emph{A bug's life (1998)}. 
+
+Also for some of the results we compared with online recommendation system did not showed result, e.g. \emph{The Mystic Masseur (2001)} has no movie similar movies on IMDB. Since our recommendation system is based only on rating values, a lot many attributes were neglected which caused such difference. We concluded that recommendation based only ratings by user has it's advantage to some extent only when the data set is very large but all other attributes should also be considered to recommend.
 
 
 \bibliographystyle{plain}
