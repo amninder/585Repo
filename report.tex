@@ -15,6 +15,8 @@
 %\usepackage{multirow}
 \usepackage{url}
 \usepackage{enumerate}
+\usepackage{listings}
+\lstloadlanguages{Python}
 %\usepackage{subfigure}
 %etc.
 
@@ -279,7 +281,20 @@ For explanation we created sample data for movies, say \emph{Movie A, Movie B} w
 	The Cosine Similarity shows the cosine angle between two matrices. The cosine similarity between Movie C and Movie B is smaller when compared to cosine similarity between Movie C and Movie A. Hence with the small cosine value denotes that the inner product space between Movie C and Movie B is small thereby stating that Movie C is more similar to Movie B when compared to Movie A in terms of user ratings. 
 \end{enumerate}
 
+\subsection{Programming}
+For the development of this project our development environment was Python and to fine Cosine Similarity we used the following libraries:
 
+\begin{enumerate}
+	\item{\bf recsys: }
+	\item{\bf SciPy: }
+	\item{\bf Numpy: }
+\end{enumerate}
+
+\fbox{
+	\parbox{\linewidth}{
+		\lstinputlisting[label = samplecode, firstline=33,lastline=50]{movie.py}
+	}
+}
 
 \section{Experimental Results}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 MAY 2014 22:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 MAY 2014 22:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -149,6 +149,34 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks21
 )
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count100
+\lst@gtempboxa=\box29
+\lst@token=\toks22
+\lst@length=\count101
+\lst@currlwidth=\dimen119
+\lst@column=\count102
+\lst@pos=\count103
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
+\lst@newlines=\count104
+\lst@lineno=\count105
+\lst@maxwidth=\dimen122
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count106
+\lst@skipnumbers=\count107
+\lst@framebox=\box30
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
 (./report.aux
 
 LaTeX Warning: Label `tab:movieB' multiply defined.
@@ -165,31 +193,31 @@ LaTeX Warning: Label `tab:URIDF' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen119
-\scratchbox=\box29
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen120
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count108
+\scratchdimen=\dimen123
+\scratchbox=\box31
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen124
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -238,62 +266,77 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count114
+
 [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (2.69186pt too wide) in paragraph at lines 52--53
+Overfull \hbox (2.69186pt too wide) in paragraph at lines 54--55
 \OT1/cmr/m/n/12 Dis-tance (CAD) queries in high di-men-sional data spaces. Us-i
 ng the-o-ret-i-cal anal-y-sis and ex-per-i-men-tal
  []
 
 [1]
 
-LaTeX Warning: Citation `dke' on page 2 undefined on input line 80.
+LaTeX Warning: Citation `dke' on page 2 undefined on input line 82.
 
 [2]
-Overfull \hbox (9.13953pt too wide) in paragraph at lines 121--122
+Overfull \hbox (9.13953pt too wide) in paragraph at lines 123--124
 []\OT1/cmr/m/n/12 Generate In-verse Doc-u-ment Fre-quency (IDF) for each item-s
 et (user rat-ings) in a doc-u-ment. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--182
+Underfull \hbox (badness 10000) in paragraph at lines 157--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--182
+Underfull \hbox (badness 10000) in paragraph at lines 157--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--182
+Underfull \hbox (badness 10000) in paragraph at lines 157--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--182
+Underfull \hbox (badness 10000) in paragraph at lines 157--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--182
+Underfull \hbox (badness 10000) in paragraph at lines 157--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--182
+Underfull \hbox (badness 10000) in paragraph at lines 157--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--182
+Underfull \hbox (badness 10000) in paragraph at lines 157--184
 
  []
 
-[3] [4]
+[3] [4] (./movie.py
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+)
+Overfull \hbox (23.66698pt too wide) in paragraph at lines 297--298
+[][] 
+ []
+
+[5]
 No file report.bbl.
-[5] (./report.aux)
+[6] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -303,16 +346,16 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 51 ({)
+### simple group (level 1) entered at line 53 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2506 strings out of 493488
- 33695 string characters out of 3141326
- 101064 words of memory out of 3000000
- 5790 multiletter control sequences out of 15000+200000
+ 3749 strings out of 493488
+ 52168 string characters out of 3141326
+ 145227 words of memory out of 3000000
+ 7010 multiletter control sequences out of 15000+200000
  10280 words of font info for 37 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,11n,29p,909b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,32p,909b,1207s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
@@ -322,10 +365,10 @@ mr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on report.pdf (6 pages, 98378 bytes).
+Output written on report.pdf (7 pages, 100950 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
