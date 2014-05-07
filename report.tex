@@ -3,6 +3,7 @@
 %\documentclass[letterpaper]{article}
 \documentclass[12pt, titlepage, onecolumn]{article}
 %
+\usepackage[margin=1in]{geometry}
 \usepackage[raggedright]{titlesec}
 \usepackage[none]{hyphenat}
 %
@@ -180,13 +181,7 @@ For explanation we created sample data for movies, say \emph{Movie A, Movie B} w
 		\end{center}
 		\label{tab:movieB}
 		\end{table}
-		\\
-		\\
-		\\
-		\\
-		\\
-		\\
-		\\
+		
 	\item Inverse Document Frequency [IDF] is calculated using \emph{Equation \ref{eq: idf}} of Section \ref{sec: formulas} Item \ref{itm: idf_item} and result is in \emph{Table \ref{tab: tabidf}}
 	\begin{table}[ht]
 	\label{tab: tabidf}
@@ -303,24 +298,75 @@ For the development of this project our development environment was Python and t
 		\end{itemize}
 \end{enumerate}
 
-The contents of \emph{movie.dat} are stored in the variable \emph{movieNames} and \emph{ratings.dat} is stored in \emph{ratings}. Every movie name is allotted an unique ID and \emph{movie\_dict} is dictionary variable defined to map name to the id of the movie. The similarity matrix is stored in a form of dictionary mapping the movie with 10 top similar movies arranged in the defending order. This variable is then rendered in JSON file.
+The contents of \emph{movie.dat} are stored in the variable \emph{movieNames} and \emph{ratings.dat} is stored in \emph{ratings}. Every movie name is allotted an unique ID and \emph{movie\_dict} is dictionary variable defined to map name to the id of the movie. The similarity matrix is stored in a form of dictionary mapping the movie with 10 top similar movies arranged in the defending order. This variable is then rendered in JSON file. \emph{svd} defined in method \emph{readDat()} as mentioned in Code snippet is used to store the data from the file and stored in the form of matrix.
 
-The
+The values of matrix is stored in \emph{svdlibc} by converting into sparse matrix. If a matrix A is stored in ordinary (dense) format, then the command $S = \text{sparse(A)}$ creates a copy of a matrix stored in sparse format. The rating of the movies are separated by \emph{::} in the following structure:
+\begin{center}
+	UserID :: MovieID :: Ratings :: TimeStamp
+\end{center}
+\begin{enumerate}
+	\item {\bf UserID: } Every user who rating the movie is given an unique ID
+	\item {\bf MovieID: } Every movie is given an unique ID
+	\item {\bf Ratings: } This is the rating given by the user. The rating value is from 1 through 5.
+	\item {\bf TimeStamp: }This is the date on which user rated the move title. It is the total seconds elapsed since 1\textsuperscript{st} of  January 1970.
+\end{enumerate}
+
 
 \begin{table}[ht]
-	\label{tab: redDat}
 		\begin{center}
 		\begin{tabular}{c}
     		 \fbox{
 			\parbox{\linewidth}{
-				\lstinputlisting[label = samplecode, firstline=33,lastline=50]{movie.py}
+				\lstinputlisting[label = samplecode, firstline=33,lastline=51]{movie.py}
 			}
 		}
 		\end{tabular}
-		\caption{(UR $\times$ IDF)}
 		\end{center}
 		\label{tab:URIDF}
 		\end{table}
+
+The syntax to find the similarity between two documents is 
+\begin{center}
+	\emph{svd.similarity(item1, item2)} \\
+	or \\
+	\emph{svd.similar(item)}
+\end{center}
+
+Here \emph{svd} is the object which holds the computed vector matrix of similarity. To find all the similar values we used \emph{svd.similar(item)}. All the values are run through loops till it finds the end of movie file and finding all the similar values to the particular movie. All the similar movies are then stored in the form of list and mapped to the movie for which the value was to be found. Later this value is used to generate JSON file.\\ \\
+
+
+ \fbox{
+	\parbox{\linewidth}{
+		\lstinputlisting[label = samplecode, firstline=52,lastline=59]{movie.py}
+	}
+}\\\\
+
+
+ \fbox{
+	\parbox{\linewidth}{
+		\lstinputlisting[label = samplecode, firstline=60,lastline=64]{movie.py}
+	}
+}\\ \\
+
+
+\emph{movie\_dict} is dictionary for mapping movie name to the movie id. It opens \emph{movie.dat} file and splits each line by "\emph{::}" and stores in the form if list. The movie id is at 0\textsuperscript{th} index and name is at 1\textsuperscript{st} index.\\\\
+
+
+ \fbox{
+	\parbox{\linewidth}{
+		\lstinputlisting[label = samplecode, firstline=86,lastline=92]{movie.py}
+	}
+}\\ \\
+
+\emph{dat\_to\_json(dict)} is method defined to create result in the form if JSON file from the dictionary provided as an argument.
+\\\\
+
+ \fbox{
+	\parbox{\linewidth}{
+		\lstinputlisting[label = samplecode, firstline=60,lastline=69]{movie.py}
+	}
+}
+
 \section{Experimental Results}
 
 \section{Conclusion}

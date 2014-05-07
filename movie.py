@@ -31,7 +31,6 @@ movie_similarity = {}
 similar_title = []
 
 def readDat():
-	print(white("READING RATING FILE"))
 	global svd
 	global svdlibc
 	global tree
@@ -51,32 +50,23 @@ def readDat():
 		similar_title = []
 
 def generateResult(dict):
-	print(white("GENERATING SIMILARITY MATRIX"))
 	for key, value in dict.iteritems():
-		# str = retMovieName(key)
 		str = "%d"%key
 		for v in value:
-			# str += "::%s"%retMovieName(v)
 			str += "::%d"%v
-		# print str
 		with open("result.dat", "a") as resultFile:
 			resultFile.write(str+"\n")
 		str = ''
-	print(white("GEENRATING JSON FILE"))
-	# with open("result.json", 'a') as js:
-	# 	js.write(json.dumps(dict))
 def dat_to_json(dict):
 	l = []
 	for key, value in dict.iteritems():
-		# print retMovieName(key)
 		for v in value:
-			# print white(retMovieName(v))
 			l.append(retMovieName(v))
 		movie_name_dict[retMovieName(key)] = l
 		l = []
-	# print movie_name_dict
 	with open("result.json", 'a') as js:
-		js.write(json.dumps(movie_name_dict,  ensure_ascii=False))
+		js.write(json.dumps(movie_name_dict,\
+		  ensure_ascii=False))
 
 def makeJSON(itemid):
 	for x in tree:
@@ -94,25 +84,15 @@ def retMovieName(id):
 	return movie_dict[str(id)]
 
 def readMovieNames():
-	print(white("READING MOVIE NAMES"))
 	global movieNames
 	movies = open(movieNames, "r")
 	lines = movies.readlines()
 	for line in lines:
-		# print line
 		x = line.split("::")
-		# print "Id: %s, Name: %s"%(x[0], x[1])
 		movie_dict[x[0]] = x[1]
-	# print movie_dict
 
 
 readMovieNames()
 readDat()
 generateResult(movie_similarity)
 dat_to_json(movie_similarity)
-# makeJSON(tree[0])
-"""
-Down to you (2000)
-Toy Story (1995)
-IMDB doesnot suggest for The Mystic Masseur
-"""
