@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 11:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 11:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -362,131 +362,131 @@ File: graph.JPG Graphic file (type jpg)
 Package pdftex.def Info: graph.JPG used on input line 98.
 (pdftex.def)             Requested size: 237.13535pt x 225.09038pt.
  [3 <./graph.JPG>] [4] [5]
-Overfull \hbox (5.91129pt too wide) in paragraph at lines 299--300
+Overfull \hbox (5.91129pt too wide) in paragraph at lines 300--301
 []\OT1/cmr/bx/n/10.95 Numpy: \OT1/cmr/m/n/10.95 NumPy is the fun-da-men-tal pac
 k-age for sci-en-tific com-put-ing with Python.
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 301.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 302.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 301.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 302.
  [6] (./movie.py
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
 )
-Overfull \hbox (26.63324pt too wide) in paragraph at lines 324--331
+Overfull \hbox (26.63324pt too wide) in paragraph at lines 325--332
  [] 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
-(./movie.py)
-Overfull \hbox (30.52501pt too wide) in paragraph at lines 349--350
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 (./movie.py)
-Overfull \hbox (30.52501pt too wide) in paragraph at lines 356--357
+Overfull \hbox (30.52501pt too wide) in paragraph at lines 350--351
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+(./movie.py)
+Overfull \hbox (30.52501pt too wide) in paragraph at lines 357--358
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 
-Overfull \hbox (0.13304pt too wide) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+
+ []
+
+
+Overfull \hbox (0.13304pt too wide) in paragraph at lines 360--361
 []\OT1/cmr/m/it/10.95 movie[]-dict \OT1/cmr/m/n/10.95 is dic-tio-nary for map-p
 ing movie name to the movie id. It opens \OT1/cmr/m/it/10.95 movie.dat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 (./movie.py)
-Overfull \hbox (30.52501pt too wide) in paragraph at lines 366--367
+Overfull \hbox (30.52501pt too wide) in paragraph at lines 367--368
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
 
-Overfull \hbox (13.02171pt too wide) in paragraph at lines 368--370
+Overfull \hbox (13.02171pt too wide) in paragraph at lines 369--371
 \OT1/cmr/m/n/10.95 dic-tio-nary pro-vided as an ar-gu-ment. It opens "\OT1/cmr/
 m/it/10.95 re-sult.json\OT1/cmr/m/n/10.95 " file and writes \OT1/cmr/m/it/10.95
  movie[]-name[]-dict
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--370
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--370
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 
  []
 
 [8] (./movie.py)
-Overfull \hbox (30.52501pt too wide) in paragraph at lines 375--376
+Overfull \hbox (30.52501pt too wide) in paragraph at lines 376--377
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
 
-Overfull \hbox (96.22093pt too wide) in paragraph at lines 378--379
+Overfull \hbox (96.22093pt too wide) in paragraph at lines 379--380
 []\OT1/cmr/m/n/10.95 This JSON file is used to ren-der HTML web page linked to 
 http://whispering-sands-8504.herokuapp.com 
  []
@@ -501,13 +501,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 54 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4254 strings out of 493488
- 59545 string characters out of 3141326
+ 4255 strings out of 493488
+ 59559 string characters out of 3141326
  155465 words of memory out of 3000000
- 7492 multiletter control sequences out of 15000+200000
+ 7493 multiletter control sequences out of 15000+200000
  11727 words of font info for 42 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,13n,32p,899b,1248s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,13n,32p,1007b,1248s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
@@ -519,7 +519,7 @@ r10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 >
-Output written on report.pdf (9 pages, 169275 bytes).
+Output written on report.pdf (9 pages, 169847 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

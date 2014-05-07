@@ -87,7 +87,7 @@ Another important element in Netflix’ personalization is awareness. They want me
 \section{Methodology}
 In this project we are finding the similarities between the different movies by implementing cosine similarity concept on the user reviews obtained from different users. Angular similarity is a similarity metric obtained from the two movies which are considered as two documents by implementing cosine similarity between them. In general the cosine value will be between 0 and 1.If the cosine value of the two vectors are large then the inner product space between the vectors is large which means the two vectors have high degree of dissimilarity. If the cosine value is small then the inner product space between the vectors is small that denotes the two vectors are similar in nature.
 
-Cosine Similarity\cite{dke} is a metric used to find the similarity between the two objects in terms of orientation. Here the two objects are considered as vectors in a user defined n dimensional space. The similarity is based only upon the orientation of the two different vectors and it does not consider the magnitude of the two vectors. The similarity level is generally based on the angle derived from the cosine similarity measure which denotes the cosine angular similarity between the two vectors. The two vectors are said to be similar if they have a smaller cosine angle. The smaller angle denotes the inner product space between the two vectors or objects are small which displays that the two vectors are similar. If the cosine angle is large there will be a large inner product space between the two vectors which denotes the two vectors are dissimilar to each other. 
+Cosine Similarity\cite{dke} is a metric used to find the similarity between the two objects in terms of orientation. Here the two objects are considered as vectors in a user defined n dimensional space. The similarity is based only upon the orientation of the two different vectors and it does not consider the magnitude of the two vectors. The similarity level is generally based on the angle derived from the cosine similarity measure which denotes the cosine angular similarity between the two vectors. The two vectors are said to be similar if they have a smaller cosine angle. The smaller angle denotes the inner product space between the two vectors or objects are small which displays that the two vectors are similar. If the cosine angle is large there will be a large inner product space between the two vectors which denotes the two vectors are dissimilar to each other. Figure \ref{fig:relation} shows the angle between two matrices $\vec{V_{1}}$ and $\vec{V_{2}}$
 \begin{align*}
 \cos \theta &= \frac{A.B}{||A|| \text{ }||B|| }\\
 &= \frac{\sum_{i=1}^{n} A_{i} \times B_{i}}{\sqrt{\sum_{i=1}^{n}(A_{i})^{2} \times \sum_{i=1}^{n}(B_{i})^{2}}}
@@ -97,6 +97,7 @@ Cosine Similarity\cite{dke} is a metric used to find the similarity between the 
   \centering
     \includegraphics[natwidth=0.4\textwidth]{graph.JPG}
       \caption{Cosine angular similarity graph}
+      \label{fig:relation}
 \end{figure}
 
 \subsection{Term Definition}
