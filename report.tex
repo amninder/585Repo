@@ -1,7 +1,7 @@
 % This LaTex template is for CPS 585 trem papers
 %
 %\documentclass[letterpaper]{article}
-\documentclass[12pt, titlepage, onecolumn]{article}
+\documentclass[12pt, onecolumn]{article}
 %
 \usepackage[margin=1in]{geometry}
 \usepackage[raggedright]{titlesec}
@@ -21,14 +21,14 @@
 %\usepackage{subfigure}
 %etc.
 
-\setlength{\textwidth}{7.0in}
-\setlength{\textheight}{9.125in}
-\setlength{\columnsep}{0.375in}
-\setlength{\topmargin}{-0.8in}
-\setlength{\oddsidemargin}{-0.25in}
-\setlength{\evensidemargin}{-0.25in}
-\setlength{\parindent}{0.125in}
-\setlength{\parskip}{1mm}
+%\setlength{\textwidth}{7.0in}
+%\setlength{\textheight}{9.125in}
+%\setlength{\columnsep}{0.375in}
+%\setlength{\topmargin}{-0.8in}
+%\setlength{\oddsidemargin}{-0.25in}
+%\setlength{\evensidemargin}{-0.25in}
+%\setlength{\parindent}{0.125in}
+%\setlength{\parskip}{1mm}
 
 \date{}
 
@@ -52,7 +52,7 @@ Mount Pleasant, MI 48859\\
 \maketitle 
 
 \abstract{
-In this paper, we compare commonly used distance measures in vector odes, namely, cosine Angle Distance (CAD) queries in high dimensional data spaces. Using theoretical analysis and experimental results, we show that the retrieval results based on CAD when dimension is ugh. We have applied CAD for rating based similarity retrieval.
+In this paper, we compare commonly used distance measures in vector models, namely, cosine Angle Distance (CAD) queries in high dimensional data spaces. Using theoretical analysis and experimental results, we showed the retrieval results based on CAD when dimension is high. We have applied CAD for rating based similarity retrieval.
 
 \section{Introduction} 
 
@@ -74,9 +74,13 @@ Cosine similarity is an efficient method for calculating the similarity between 
 	\item{\bf Google's Page Rang Algorithm: }Cosine similarity is one of the statistical components used to formulate a web graph by calculating the page score obtained from each node from the search query pattern.
 
 \end{enumerate}
+
+%RELATED WORK
 \section{Related Work}
+Yehunda Koren\cite{Koren091the} in his article "\emph{The BellKor Solution to the Netflix Grand Prize}" explained about the algorithm Netflix is using for the movie recommendation system. The team of Netflix have more than 40 people hand-tagging TV shows and movies for them. These are typically freelancers who do this to supplement their income. All of their analysts are TV and movie buffs, and many have some experience working in the entertainment industry. They obviously have personal tastes, but their job as an analyst is to be objective.
 
-
+Another important element in Netflix’ personalization is awareness. They want members to be aware of how they are adapting to their tastes. Above all, the algorithm that was developed as part of Netflix million dollar prize are blends of a large number of different machine learning techniques. Two of the most notable aspects that emerged from the competition were using matrix factorisation and the so-called "temporal dynamics"\cite{Koren091the} to perform collaborative filtering; the full details can be found on the forum page (which has links to papers written by the winning team):
+%METHODOLOGY
 \section{Methodology}
 In this project we are finding the similarities between the different movies by implementing cosine similarity concept on the user reviews obtained from different users. Angular similarity is a similarity metric obtained from the two movies which are considered as two documents by implementing cosine similarity between them. In general the cosine value will be between 0 and 1.If the cosine value of the two vectors are large then the inner product space between the vectors is large which means the two vectors have high degree of dissimilarity. If the cosine value is small then the inner product space between the vectors is small that denotes the two vectors are similar in nature.
 
@@ -88,7 +92,7 @@ Cosine Similarity\cite{dke} is a metric used to find the similarity between the 
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.4\textwidth]{graph}
+    \includegraphics[natwidth=0.4\textwidth]{graph.JPG}
       \caption{Cosine angular similarity graph}
 \end{figure}
 
@@ -286,7 +290,7 @@ For explanation we created sample data for movies, say \emph{Movie A, Movie B} w
 For the development of this project our development environment was Python and to fine Cosine Similarity we used the following libraries:
 
 \begin{enumerate}
-	\item{\bf recsys: }python-recsys is build on top of Divisi2.
+	\item{\bf recsys: }python-recsys is build on top of Divisi2. It is used to calculate cosine similarity calculation
 	\item{\bf Divisi2: }Divisi is particularly designed for working with knowledge in semantic networks.
 	\item{\bf SciPy: } It is a computing environment and open source ecosystem of software for the Python programming language used by scientists, analysts and engineers doing scientific computing and technical computing.
 	\item{\bf Numpy: }NumPy is the fundamental package for scientific computing with Python. It contains among other things:
@@ -358,14 +362,17 @@ Here \emph{svd} is the object which holds the computed vector matrix of similari
 	}
 }\\ \\
 
-\emph{dat\_to\_json(dict)} is method defined to create result in the form if JSON file from the dictionary provided as an argument.
+\emph{dat\_to\_json(dict)} is method defined to create result in the form if JSON file from the dictionary provided as an argument. It opens "\emph{result.json}" file and writes \emph{movie\_name\_dict} value into the file.
 \\\\
 
  \fbox{
 	\parbox{\linewidth}{
 		\lstinputlisting[label = samplecode, firstline=60,lastline=69]{movie.py}
 	}
-}
+}\\ \\
+
+
+This JSON file is used to render HTML web page linked to  {http://whispering-sands-8504.herokuapp.com}
 
 \section{Experimental Results}
 

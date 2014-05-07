@@ -3,47 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: report.aux
 The style file: plain.bst
 Database file #1: myRefs.bib
-Warning--I didn't find a database entry for "Muflikhah:2009:DCU:"
-Warning--empty journal in huang2008similarity
-You've used 4 entries,
+You've used 2 entries,
             2118 wiz_defined-function locations,
-            526 strings with 4700 characters,
-and the built_in function-call counts, 1406 in all, are:
-= -- 136
-> -- 76
-< -- 2
-+ -- 31
-- -- 26
-* -- 105
-:= -- 246
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 25
+            509 strings with 4208 characters,
+and the built_in function-call counts, 584 in all, are:
+= -- 51
+> -- 30
+< -- 0
++ -- 12
+- -- 10
+* -- 40
+:= -- 105
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 49
-empty$ -- 94
-format.name$ -- 26
-if$ -- 283
+cite$ -- 2
+duplicate$ -- 18
+empty$ -- 48
+format.name$ -- 10
+if$ -- 118
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 3
-newline$ -- 23
-num.names$ -- 8
-pop$ -- 22
+int.to.str$ -- 2
+missing$ -- 1
+newline$ -- 12
+num.names$ -- 4
+pop$ -- 14
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 9
 quote$ -- 0
-skip$ -- 35
+skip$ -- 15
 stack$ -- 0
-substring$ -- 76
-swap$ -- 10
-text.length$ -- 2
+substring$ -- 25
+swap$ -- 2
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
-warning$ -- 1
-while$ -- 14
-width$ -- 5
-write$ -- 45
-(There were 2 warnings)
+type$ -- 8
+warning$ -- 0
+while$ -- 5
+width$ -- 3
+write$ -- 21

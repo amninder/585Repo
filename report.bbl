@@ -1,19 +1,8 @@
 \begin{thebibliography}{1}
 
-\bibitem{drineas2004clustering}
-P.~Drineas, A.~Frieze, R.~Kannan, S.~Vempala, and V.~Vinay.
-\newblock {Clustering large graphs via the singular value decomposition}.
-\newblock {\em Machine Learning}, 56(1):9--33, 2004.
-
-\bibitem{huang2008similarity}
-A.~Huang.
-\newblock {Similarity measures for text document clustering}.
-\newblock pages 49--56, 2008.
-
-\bibitem{steinbach_et_al_2000}
-M.~Steinbach, G.~Karypis, and V.~Kumar.
-\newblock A comparison of document clustering techniques.
-\newblock Technical Report 00-034, University of Minnesota, 2000.
+\bibitem{Koren091the}
+Yehuda Koren.
+\newblock 1 the bellkor solution to the netflix grand prize, 2009.
 
 \bibitem{dke}
 Shiwei Zhu, Junjie Wu, Hui Xiong, and Guoping Xia.
