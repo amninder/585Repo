@@ -1,12 +1,45 @@
 \begin{thebibliography}{1}
 
+\bibitem{drineas2004clustering}
+P.~Drineas, A.~Frieze, R.~Kannan, S.~Vempala, and V.~Vinay.
+\newblock {Clustering large graphs via the singular value decomposition}.
+\newblock {\em Machine Learning}, 56(1):9--33, 2004.
+
+\bibitem{huang2008similarity}
+A.~Huang.
+\newblock {Similarity measures for text document clustering}.
+\newblock {\em IEEE}, pages 49--56, 2008.
+
 \bibitem{Koren091the}
 Yehuda Koren.
 \newblock 1 the bellkor solution to the netflix grand prize, 2009.
 
-\bibitem{dke}
-Shiwei Zhu, Junjie Wu, Hui Xiong, and Guoping Xia.
-\newblock Scaling up top-k cosine similarity search.
-\newblock {\em Data Knowl. Eng.}, 70(1):60--83, 2011.
+\bibitem{Muf}
+Lailil Muflikhah and Baharum Baharudin.
+\newblock Document clustering using concept space and cosine similarity
+  measurement.
+\newblock In {\em Proceedings of the 2009 International Conference on Computer
+  Technology and Development - Volume 01}, ICCTD '09, pages 58--62, Washington,
+  DC, USA, 2009. IEEE Computer Society.
+
+\bibitem{qian}
+Gang Qian, Shamik Sural, Yuelong Gu, and Sakti Pramanik.
+\newblock Similarity between euclidean and cosine angle distance for nearest
+  neighbor queries.
+\newblock In {\em Proceedings of the 2004 ACM Symposium on Applied Computing},
+  SAC '04, pages 1232--1237, New York, NY, USA, 2004. ACM.
+
+\bibitem{5602080}
+N.~Shibata, Y.~Kajikawa, and I.~Sakata.
+\newblock How to measure the semantic similarities between scientific papers
+  and patents in order to discover uncommercialized research fronts: A case
+  study of solar cells.
+\newblock In {\em Technology Management for Global Economic Growth (PICMET),
+  2010 Proceedings of PICMET '10:}, pages 1--6, July 2010.
+
+\bibitem{steinbach_et_al_2000}
+M.~Steinbach, G.~Karypis, and V.~Kumar.
+\newblock A comparison of document clustering techniques.
+\newblock Technical Report 00-034, University of Minnesota, 2000.
 
 \end{thebibliography}
