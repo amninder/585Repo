@@ -1,0 +1,283 @@
+% This LaTex template is for CPS 585 trem papers
+%
+%\documentclass[letterpaper]{article}
+\documentclass[12pt, titlepage, onecolumn]{article}
+%
+\usepackage[raggedright]{titlesec}
+\usepackage[none]{hyphenat}
+%
+% include packages as needed, such as
+\usepackage{amsmath}
+%\usepackage{amsthm}
+\usepackage{graphicx}
+%\usepackage[ruled,vlined]{algorithm2e}
+%\usepackage{array}
+%\usepackage{multirow}
+\usepackage{url}
+\usepackage{enumerate}
+%\usepackage{subfigure}
+%etc.
+
+\setlength{\textwidth}{7.0in}
+\setlength{\textheight}{9.125in}
+\setlength{\columnsep}{0.375in}
+\setlength{\topmargin}{-0.8in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\parindent}{0.125in}
+\setlength{\parskip}{1mm}
+
+\date{}
+
+\titlespacing{\section}{0pt}{*2.0}{*2.0}
+\titlespacing{\subsection}{0pt}{*1.8}{*1.8}
+
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+
+\begin{document}
+
+% Change to your title
+\title{\Large\textbf{Movie Recommendation System using Cosine Similarity}\normalsize}
+
+%Chane authors, institutions and emails
+\author {Amninder S Narota and Rajan Subramaniam \\
+Department of Computer Science, Central Michigan University\\
+Mount Pleasant, MI 48859\\
+(narot1a, rajan1s)@cmich.edu
+}
+\maketitle 
+
+\abstract{
+In this paper, we compare commonly used distance measures in vector odes, namely, cosine Angle Distance (CAD) queries in high dimensional data spaces. Using theoretical analysis and experimental results, we show that the retrieval results based on CAD when dimension is ugh. We have applied CAD for rating based similarity retrieval.
+
+\section{Introduction} 
+
+
+\subsection{Applications of Cosine Similarity}
+Cosine similarity is an efficient method for calculating the similarity between the two independent object or vectors and it is used in the following applications:
+
+\begin{enumerate}
+	\item {\bf Text Mining: }In text mining the cosine similarity is used to find the similarity between the two documents by using the normalized score obtained from each document.
+	
+	\item {\bf Real-Time Traffic Classification: }Real - Time Traffic Classification covers the critical role of a network administrator to perform network, maintain the quality of service by performing efficient classification process using some statistical analysis process known as weighted cosine similarity.
+	
+	\item {\bf Semantic Similarity Calculation: }In semantic similarity calculation taxonomy based cosine similarity is used to find whether the two documents are similar or not.
+	
+	\item {\bf Direction of Motion Calculation in Routing Algorithms (EBGR): }Cosine similarity is one of the functional units used in Edge Node Based Routing which is used to find whether the peer nodes are in the direction of the destination node in a dynamic wireless network known as Vanet.
+	
+	\item {\bf Text Clustering: }Cosine similarity is used to find the similar word in a document there by reducing the unordered text documents into meaningful related clusters.
+	
+	\item{\bf Google's Page Rang Algorithm: }Cosine similarity is one of the statistical components used to formulate a web graph by calculating the page score obtained from each node from the search query pattern.
+
+\end{enumerate}
+\section{Related Work}
+
+
+\section{Methodology}
+In this project we are finding the similarities between the different movies by implementing cosine similarity concept on the user reviews obtained from different users. Angular similarity is a similarity metric obtained from the two movies which are considered as two documents by implementing cosine similarity between them. In general the cosine value will be between 0 and 1.If the cosine value of the two vectors are large then the inner product space between the vectors is large which means the two vectors have high degree of dissimilarity. If the cosine value is small then the inner product space between the vectors is small that denotes the two vectors are similar in nature.
+
+Cosine Similarity\cite{dke} is a metric used to find the similarity between the two objects in terms of orientation. Here the two objects are considered as vectors in a user defined n dimensional space. The similarity is based only upon the orientation of the two different vectors and it does not consider the magnitude of the two vectors. The similarity level is generally based on the angle derived from the cosine similarity measure which denotes the cosine angular similarity between the two vectors. The two vectors are said to be similar if they have a smaller cosine angle. The smaller angle denotes the inner product space between the two vectors or objects are small which displays that the two vectors are similar. If the cosine angle is large there will be a large inner product space between the two vectors which denotes the two vectors are dissimilar to each other. 
+\begin{align*}
+\cos \theta &= \frac{A.B}{||A|| \text{ }||B|| }\\
+&= \frac{\sum_{i=1}^{n} A_{i} \times B_{i}}{\sqrt{\sum_{i=1}^{n}(A_{i})^{2} \times \sum_{i=1}^{n}(B_{i})^{2}}}
+\end{align*}
+
+\subsection{Term Definition}
+Following are the term definitions we used in this project:
+\begin{enumerate}
+	\item{\bf Document: }Collection of item sets. Eg: Movie A, Movie B, Movie C etc.
+	
+	\item {\bf Item Sets: } Denotes the set of attributes related to the particular document. Eg: Movie ID, User rating, Date information.
+	
+	\item{\bf Term Frequency: } Measures the number of times the item set occur in a document.
+	
+	\item{\bf Normalized Term Frequency [NTF]: }To get the values (item sets) in range (normalized) we are dividing each value by the total number of values.
+	
+	\item {\bf Inverse Document Frequency [IDF]: }It is a potential score which denotes the weight of each item set in a document.
+\end{enumerate}
+
+\subsection{Formulas Used}
+\label{sec: formulas}
+\begin{enumerate}
+	\item{\bf IDF[item set]}:
+	\label{itm: idf_item}
+		\begin{equation}
+			\text{IDF[item set] }= 1 + \log_{e} ( \frac{\text{Total numbers of users}}{\text{Number of times the item set repeated}})
+		\end{equation}
+	
+	\item{\bf Cosine Similarity: } Finds the similarity between the given item set with the stored item set in a document and generats the angular similarity between the two documents \emph{i.e} Movies.
+	\label{itm: cosineFormula}
+		\begin{equation}
+		\label{eq: idf}
+			\text{Cosine similarity (item-set, doc) } = \frac{\text{Dot product (item-set, Document)}}{||\text{item-set}||\text{ }\times ||\text{ Document}||}
+		\end{equation}
+\end{enumerate}
+
+\subsection{Algorithm}
+\begin{enumerate}[ {STEP }1{:}]
+	\item Measuring the Term Frequency for each item set (user ratings) in a document (Movie). 
+	\item Normalize the Term frequency to get into an appropriate value range.
+	\item Generate Inverse Document Frequency (IDF) for each item-set (user ratings) in a document.
+	\item Calculating the angular similarity between the two documents 
+\end{enumerate}
+
+\subsubsection{Calculation}
+For explanation we created sample data for movies, say \emph{Movie A, Movie B} which are as follows:
+
+\begin{enumerate}
+	\item Normalized values for all the user ratings in Movie A are in Table \ref{tab: tabMovieA}
+	
+		{\bf Document 1: } Movie A\\
+		{\bf Number of Users: }5\\
+		{\bf Rating Limit: }5\\
+		{\bf UR: }User Ratings\\
+		{\bf NUR: }Normalized User Ratings		
+		\begin{table}[ht]
+		\label{tab: tabMovieA}
+		
+		\begin{center}
+		\begin{tabular}{cccccc}
+    		\hline
+       			Number of Users	&	UR1	&	UR2	&	UR3	&	UR4	&	UR5\\
+		\hline
+    			UR				&	3	&	4	&	1	&	2	&	1\\
+			NUR				&	0.6	&	0.8	&	0.2	&	0.4	&	0.2\\
+    		\hline
+		\end{tabular}
+		\caption{Document 1; Movie A}
+		\end{center}
+		\label{tab:movieA}
+		\end{table}
+		
+	\item Normalized values for all the user ratings in Movie B are in Table \ref{tab: tabMovieB}.
+	
+		{\bf Document 2: } Movie B\\
+		{\bf Number of Users: }5\\
+		{\bf Rating Limit: }5\\
+		{\bf UR: }User Ratings\\
+		{\bf NUR: }Normalized User Ratings	
+		\begin{table}[ht]
+		\label{tab: tabMovieB}
+		\begin{center}
+		\begin{tabular}{cccccc}
+    		\hline
+       			Number of Users	&	UR1	&	UR2	&	UR3	&	UR4	&	UR5\\
+		\hline
+    			UR				&	3	&	2.5	&	3	&	5	&	4\\
+			NUR				&	0.6	&	0.5	&	0.6	&	1	&	0.8\\
+    		\hline
+		\end{tabular}
+		\caption{Document 2; Movie B}
+		\end{center}
+		\label{tab:movieB}
+		\end{table}
+		\\
+		\\
+		\\
+		\\
+		\\
+		\\
+		\\
+	\item Inverse Document Frequency [IDF] is calculated using \emph{Equation \ref{eq: idf}} of Section \ref{sec: formulas} Item \ref{itm: idf_item} and result is in \emph{Table \ref{tab: tabidf}}
+	\begin{table}[ht]
+	\label{tab: tabidf}
+		\begin{center}
+		\begin{tabular}{|c|c|c|}
+    		\hline
+       			Users	&	IDF Calculation					&	IDF\\
+		\hline
+    			U1		&	$1+\log_{e}(\frac{10}{3})$			&	2.2039\\
+			U2		&	$1+\log_{e}(\frac{10}{2})$			&	2.6094\\
+			U3		&	$1+\log_{e}(\frac{10}{2})$			&	2.6094\\
+			U4		&	$1+\log_{e}(\frac{10}{1})$			&	3.3025\\
+			U5		&	$1+\log_{e}(\frac{10}{2})$			&	2.6094\\
+			U6		&	$1+\log_{e}(\frac{10}{3})$			&	2.2039\\
+			U7		&	$1+\log_{e}(\frac{10}{3})$			&	3.3025\\
+			U8		&	$1+\log_{e}(\frac{10}{3})$			&	2.2039\\
+			U9		&	$1+\log_{e}(\frac{10}{1})$			&	3.3025\\
+			U10		&	$1+\log_{e}(\frac{10}{2})$			&	2.6094\\
+			
+			
+    		\hline
+		\end{tabular}
+		\caption{IDF Values}
+		\end{center}
+		\label{tab:movieB}
+		\end{table}
+	
+	\item Normalized values for all the user ratings in Movie C are in Table \ref{tab: tabMovieC}.
+	
+	{\bf Given Document: } Movie C\\
+		{\bf Number of Users: }2\\
+		{\bf Rating Limit: }5\\
+		{\bf UR: }User Ratings\\
+		{\bf NUR: }Normalized User Ratings	
+		\begin{table}[ht]
+		\label{tab: tabMovieC}
+		\begin{center}
+		\begin{tabular}{ccc}
+    		\hline
+       			Number of Users	&	UR1	&	UR2	\\
+		\hline
+    			UR				&	2.5	&	1.5	\\
+			NUR				&	0.5	&	0.3	\\
+    		\hline
+		\end{tabular}
+		\caption{Document 2; Movie B}
+		\end{center}
+		\label{tab:movieB}
+		\end{table}
+
+	\item Creating (UR $\times$ IDF) matrix for the given document - Movie C and result is in Table \ref{tab: tabMovieC}
+	
+	\begin{table}[ht]
+		\label{tab: tabMovieC}
+		\begin{center}
+		\begin{tabular}{ccc}
+    		\hline
+       			Number of Users	&	IDF	&	UR$\times$IDF	\\
+		\hline
+    			0.5				&	3.3025	&	1.6512	\\
+			0.3				&	2.6094	&	0.7828	\\
+    		\hline
+		\end{tabular}
+		\caption{(UR $\times$ IDF)}
+		\end{center}
+		\label{tab:URIDF}
+		\end{table}
+		
+		
+	\item Createing (UR $\times$ IDF) matrix by comparing Movie C with Movie A and Movie B. The values are in Table \ref{tab: movaVSmovb}
+	
+	\begin{table}[ht]
+	\label{tab: movaVSmovb}
+		\begin{center}
+		\begin{tabular}{ccc}
+    		\hline
+       			Movie C	&	Movie A	&	Movie B	\\
+		\hline
+    			0.5				&	1.321	&	1.6512	\\
+			0.3				&	0.5218	&	0\\
+    		\hline
+		\end{tabular}
+		\caption{(UR $\times$ IDF)}
+		\end{center}
+		\label{tab:URIDF}
+		\end{table}
+	
+	\item Cosine Similarity between two movies can be calculated using the formula in  \emph{Equation \ref{eq: idf}} of Section \ref{sec: formulas} Item \ref{itm: cosineFormula}
+\end{enumerate}
+
+
+
+\section{Experimental Results}
+
+\section{Conclusion}
+
+
+\bibliographystyle{plain}
+\bibliography{myRefs} %change to your file name (with suffix .bib)
+
+
+\end{document} 
