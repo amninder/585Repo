@@ -52,10 +52,13 @@ Mount Pleasant, MI 48859\\
 \maketitle 
 
 \abstract{
-In this paper, we compare commonly used distance measures in vector models, namely, cosine Angle Distance (CAD) queries in high dimensional data spaces. Using theoretical analysis and experimental results, we showed the retrieval results based on CAD when dimension is high. We have applied CAD for rating based similarity retrieval.
+In this paper, we  used distance measures in vector models, namely, cosine Angle Distance (CAD) queries in high dimensional data spaces. Using theoretical analysis and experimental results, we showed the retrieval results based on CAD when dimension is high. We have applied CAD for rating based similarity retrieval.
 
+%INTRODUCTION
 \section{Introduction} 
+How movie recommendation systems work? First they take take a huge data sets and user ratings. The recommendation engine then uses the collective ratings to break down the individual movies into long lists of attributes. The resulting attributes may correspond to easily identifiable qualities such as "comedy" or "western", but they may not - the computer only knows them as X, Y or Z. Nor recommendation is simple matter of decoding an individual's tastes and matching those tastes to the relevant movies. If in the past a person has enjoyed comedies with animals, or with unnamed mystery quality X -- the recommendation engine will find similar films.
 
+Movie recommendation business is booming business since the advent of online movie streaming companies started their service. If someone has a movie rental business, to keep their customer in loop they constantly require similar movies which they have watched and recommendation systems help in such way. There are many attributes associated with movies, namely, genre, ratings by users, critic scores, scores from different rating websites (e.g \emph{rottentomato, IMDB, etc.}). These attributes are used to generate list of similar movies.
 
 \subsection{Applications of Cosine Similarity}
 Cosine similarity is an efficient method for calculating the similarity between the two independent object or vectors and it is used in the following applications:

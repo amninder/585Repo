@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 02:26
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -218,10 +218,10 @@ LaTeX Warning: Label `tab: tabMovieC' multiply defined.
 LaTeX Warning: Label `tab:URIDF' multiply defined.
 
 
-LaTeX Warning: Label `samplecode' multiply defined.
-
-
 LaTeX Warning: Label `tab:URIDF' multiply defined.
+
+
+LaTeX Warning: Label `samplecode' multiply defined.
 
 
 LaTeX Warning: Label `samplecode' multiply defined.
@@ -341,157 +341,152 @@ e
 ))
 \c@lstlisting=\count117
 
-Overfull \hbox (0.91428pt too wide) in paragraph at lines 68--69
+[1
+
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (0.91428pt too wide) in paragraph at lines 71--72
 []\OT1/cmr/bx/n/10.95 Semantic Sim-i-lar-ity Cal-cu-la-tion: \OT1/cmr/m/n/10.95
  In se-man-tic sim-i-lar-ity cal-cu-la-tion tax-on-omy
  []
 
 
-Overfull \hbox (0.96208pt too wide) in paragraph at lines 72--73
+Overfull \hbox (0.96208pt too wide) in paragraph at lines 75--76
 []\OT1/cmr/bx/n/10.95 Text Clus-ter-ing: \OT1/cmr/m/n/10.95 Co-sine sim-i-lar-i
 ty is used to find the sim-i-lar word in a doc-u-ment
  []
 
-[1
-
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no Õ in font cmr10!
-
-<graph.JPG, id=10, 237.13594pt x 225.09094pt>
+[2] <graph.JPG, id=14, 237.13594pt x 225.09094pt>
 File: graph.JPG Graphic file (type jpg)
  <use graph.JPG>
-Package pdftex.def Info: graph.JPG used on input line 95.
+Package pdftex.def Info: graph.JPG used on input line 98.
 (pdftex.def)             Requested size: 237.13535pt x 225.09038pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2] [3 <./graph.JPG>] [4] [5]
-Overfull \hbox (5.91129pt too wide) in paragraph at lines 296--297
+ [3 <./graph.JPG>] [4] [5]
+Overfull \hbox (5.91129pt too wide) in paragraph at lines 299--300
 []\OT1/cmr/bx/n/10.95 Numpy: \OT1/cmr/m/n/10.95 NumPy is the fun-da-men-tal pac
 k-age for sci-en-tific com-put-ing with Python.
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 298.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 301.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 298.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 301.
  [6] (./movie.py
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
 )
-Overfull \hbox (26.63324pt too wide) in paragraph at lines 321--328
+Overfull \hbox (26.63324pt too wide) in paragraph at lines 324--331
  [] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
 (./movie.py)
-Overfull \hbox (30.52501pt too wide) in paragraph at lines 346--347
+Overfull \hbox (30.52501pt too wide) in paragraph at lines 349--350
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
-[7] (./movie.py)
-Overfull \hbox (30.52501pt too wide) in paragraph at lines 353--354
+(./movie.py)
+Overfull \hbox (30.52501pt too wide) in paragraph at lines 356--357
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Overfull \hbox (0.13304pt too wide) in paragraph at lines 356--357
+Overfull \hbox (0.13304pt too wide) in paragraph at lines 359--360
 []\OT1/cmr/m/it/10.95 movie[]-dict \OT1/cmr/m/n/10.95 is dic-tio-nary for map-p
 ing movie name to the movie id. It opens \OT1/cmr/m/it/10.95 movie.dat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 (./movie.py)
-Overfull \hbox (30.52501pt too wide) in paragraph at lines 363--364
+Overfull \hbox (30.52501pt too wide) in paragraph at lines 366--367
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 
-Overfull \hbox (13.02171pt too wide) in paragraph at lines 365--367
+Overfull \hbox (13.02171pt too wide) in paragraph at lines 368--370
 \OT1/cmr/m/n/10.95 dic-tio-nary pro-vided as an ar-gu-ment. It opens "\OT1/cmr/
 m/it/10.95 re-sult.json\OT1/cmr/m/n/10.95 " file and writes \OT1/cmr/m/it/10.95
  movie[]-name[]-dict
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--367
+Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--367
+Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
 
-(./movie.py)
-Overfull \hbox (30.52501pt too wide) in paragraph at lines 372--373
+[8] (./movie.py)
+Overfull \hbox (30.52501pt too wide) in paragraph at lines 375--376
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
-[8]
-Overfull \hbox (96.22093pt too wide) in paragraph at lines 375--376
+
+Overfull \hbox (96.22093pt too wide) in paragraph at lines 378--379
 []\OT1/cmr/m/n/10.95 This JSON file is used to ren-der HTML web page linked to 
 http://whispering-sands-8504.herokuapp.com 
  []
@@ -508,7 +503,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4254 strings out of 493488
  59545 string characters out of 3141326
- 161465 words of memory out of 3000000
+ 155465 words of memory out of 3000000
  7492 multiletter control sequences out of 15000+200000
  11727 words of font info for 42 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -524,7 +519,7 @@ r10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 >
-Output written on report.pdf (9 pages, 167585 bytes).
+Output written on report.pdf (9 pages, 169275 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
