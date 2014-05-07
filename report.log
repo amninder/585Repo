@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 MAY 2014 22:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 MAY 2014 22:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,9 +291,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--182
 
  []
 
-[3]
+[3] [4]
 No file report.bbl.
-[4] [5] (./report.aux)
+[5] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -308,7 +308,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2506 strings out of 493488
  33695 string characters out of 3141326
- 100064 words of memory out of 3000000
+ 101064 words of memory out of 3000000
  5790 multiletter control sequences out of 15000+200000
  10280 words of font info for 37 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -322,7 +322,7 @@ mr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on report.pdf (6 pages, 97574 bytes).
+Output written on report.pdf (6 pages, 98378 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream

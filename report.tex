@@ -258,7 +258,7 @@ For explanation we created sample data for movies, say \emph{Movie A, Movie B} w
        			Movie C	&	Movie A	&	Movie B	\\
 		\hline
     			0.5				&	1.321	&	1.6512	\\
-			0.3				&	0.5218	&	0\\
+			0.3				&	0.5218	&	0	\\
     		\hline
 		\end{tabular}
 		\caption{(UR $\times$ IDF)}
@@ -266,7 +266,17 @@ For explanation we created sample data for movies, say \emph{Movie A, Movie B} w
 		\label{tab:URIDF}
 		\end{table}
 	
-	\item Cosine Similarity between two movies can be calculated using the formula in  \emph{Equation \ref{eq: idf}} of Section \ref{sec: formulas} Item \ref{itm: cosineFormula}
+	\item Cosine Similarity between two movies can be calculated using the formula in  \emph{Equation \ref{eq: idf}} of Section \ref{sec: formulas} Item \ref{itm: cosineFormula}. Cosine Similarity between Movie C and Movie A is:
+	
+	\begin{align*}
+		\text{Cosine Similarity(Movie C, Movie A) } &= \frac{(1.6512 \times 1.321)+(0.7828\times 0.5218)}{\sqrt{(1.6512^{2}+0.7828^{2})\times (1.321^{2}+0.5218^{2})}} \\
+		&= 0.99 \\
+		\\
+		\text{Cosine Similarity(Movie C, Movie B) } &= \frac{(1.6512 \times 1.6512)+(0.7828\times 0)}{\sqrt{(1.6512^{2}+0.7828^{2})\times (1.6512^{2}+0)}} \\
+		&= 0.90 \\
+	\end{align*}
+	
+	The Cosine Similarity shows the cosine angle between two matrices. The cosine similarity between Movie C and Movie B is smaller when compared to cosine similarity between Movie C and Movie A. Hence with the small cosine value denotes that the inner product space between Movie C and Movie B is small thereby stating that Movie C is more similar to Movie B when compared to Movie A in terms of user ratings. 
 \end{enumerate}
 
 
